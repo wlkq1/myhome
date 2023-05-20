@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
 		<title>星芒 starawn</title>
 
-		<meta name="description" content="05后少年，阳高二中初二学生，不爱学习，大傻逼，懒癌患者，缺乏社会的毒打">
+		<meta name="description" content="05后少年，阳高二中初二学生温家庆，星芒">
 		<meta name="keywords" content="Java,Spring,个人">
 		<meta name="format-detection" content="telephone=no">
 		<link rel="icon" href="favicon.ico">
@@ -79,7 +79,7 @@
 							<div class="card-content">
 								<div class="card-info-avatar is-center">
 									<img class="avatar-img" src="tx.jpg" alt="加载中...有点耐心吧">
-									<div class="author-info__name">starawn </div>
+									<div class="author-info__name">星芒 </div>
 									<div class="author-info__description">
 										05后傻逼，阳高二中初二学生，出生于2.5次元，<span class="heimu"title="他NND，你知道这么多干嘛?">不爱学习，大傻逼，懒癌患者，缺乏社会的毒打，社恐，家里蹲，见光死（等一堆贬义词）</span></div>
 								</div>
@@ -138,31 +138,6 @@
 							</meting-js>
 							<hr>
 							
-							<h2>网易云音乐热门评论</h2>
-
-							<script src="https://api.uomg.com/api/comments.163?format=text"></script>
-							
-							
-			<?php
-header("Content-Type:text/html;charset=UTF-8");
-date_default_timezone_set("PRC");
-$result = file_get_contents("https://api.uomg.com/api/comments.163?sort=热歌榜&format=json");
-$arr=json_decode($result,true);
-if ($arr['code']==1) {
-    //输出歌曲地址
-    echo $arr['data']['url'];
-} else {
-    echo $arr['msg'];
-}
-?>
-
-
-		
-							
-
-
-							
-							<hr>
 							
 							
 
